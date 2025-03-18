@@ -2,5 +2,5 @@
 
 Built with R3F.
 
-A cafe scene with sun lighting rotational sun lighting for simulated day / night cycle.
+A cafe with sun rotational sun lighting for a simulated day / night cycle.
 
