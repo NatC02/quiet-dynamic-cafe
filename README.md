@@ -1,6 +1,12 @@
 # Interactively lit webgl 3D quiet ambient cafe
 
-Built with R3F.
+<img src="./readme.gif" alt="Dissolve Effect Demonstration" style="width: 66.66vw; max-width: 800px; margin: 0 auto; display: block;">
 
-A cafe with sun rotational sun lighting for a simulated day / night cycle.
+## Installation
+```
+npm install
 
+npm run dev
+
+npm run build
+```
