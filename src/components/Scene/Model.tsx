@@ -3,18 +3,20 @@ import { useGLTF } from '@react-three/drei';
 import { Mesh, Group } from 'three'; // Import Mesh and Group types
 
 interface ModelProps {
-    scale: number;
+  scale: number;
 }
 
-export function Model({ scale }: ModelProps) {
-    const { nodes, materials } = useGLTF('/cafe.glb');
-    const groupRef = useRef<Group>(null);
+// latest change note: rewrote component with type assertions to ensure that the compiler treats all geometry nodes as a Mesh object, allowing access to its geometry property without type errors.
 
-    return (
-        <group ref={groupRef} scale={scale} dispose={null}>
-            <group rotation={[-Math.PI / 2, 0, 0]} scale={0.008}>
-                <group rotation={[Math.PI / 2, 0, 0]}>
-                    <group position={[-637.389, 0, 0]}>
+export function Model({ scale }: ModelProps) {
+  const { nodes, materials } = useGLTF('/cafe.glb');
+  const groupRef = useRef<Group>(null);
+
+  return (
+    <group ref={groupRef} scale={scale} dispose={null}>
+      <group rotation={[-Math.PI / 2, 0, 0]} scale={0.008}>
+        <group rotation={[Math.PI / 2, 0, 0]}>
+          <group position={[-637.389, 0, 0]}>
             <mesh
               castShadow
               receiveShadow
