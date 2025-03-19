@@ -1,4 +1,4 @@
-# Interactively lit 3D quiet ambient cafe
+# Interactively lit webgl 3D quiet ambient cafe
 
 Built with R3F.
 
